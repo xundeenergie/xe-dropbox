@@ -12,9 +12,9 @@ fi
 
 SERVICES="
     dropbox.target
-    dropbox@.service
     "
 INSTSERVICES="
+    $(awk -F ":" '$3 >= 1000 {print "dropbox@"$1".service"}' /etc/passwd) 
     "
 
 case "$1" in
