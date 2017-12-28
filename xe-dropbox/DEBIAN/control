@@ -1,11 +1,11 @@
 Package: xe-dropbox
-Version: 0.1.35
+Version: 0.1.36
 Section: misc
 Priority: extra
 Architecture: all
 Maintainer: Jakobus Schürz <jakob@xundeenergie.at>
 Homepage: http://github.com/xundeenergie/xe-dropbox
 Provides: xe-dropbox
-Depends: dropbox
+Depends: dropbox, deb-systemd-helper-new
 Recommends: 
 Description: Systemd-units for running dropbox as user or systemwide systemd-service
